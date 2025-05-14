@@ -1,6 +1,7 @@
-def return_string():
-    return ''
+# lib/string_functions.py
 
-def interpolate_string(s):
-    return f'Hello, {s}!'
-    
+def return_string(input_string):
+    return input_string
+
+def interpolate_string(template, **kwargs):
+    return template.format(**kwargs)
